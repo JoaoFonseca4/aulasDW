@@ -1,0 +1,6 @@
+-> Inicializa o repositorio git (utilizando apenas uma vez)
+git init
+
+->Verificar o status do repositorio
+git status
+
