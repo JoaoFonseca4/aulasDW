@@ -35,7 +35,21 @@
                 background-color: #00f;
             }
 
+            #quadrado{
+                background-color: #f00;
+                height: 100px;
+                width: 100px;
+                border-radius: 20px;
+            }
+
         </style>
+
+        <!--CSS Externo -> Adiciona um .css a página-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Este deve ser o primeiro css da página (aqui ta errado)-->
+        <link rel="stylesheet" href="css/reset.css">
+
     </head>
 
     <body>
@@ -74,9 +88,18 @@
             No meio do texto <i class="texto-verde"> Tambem pode! </i>
         </p>
 
-        <p class="texto-verde ">
+        <p class="texto-amarelo">
             Bem vindo ao mundo CSS
             <b style="font-size: 25px;"> Onde alteramos tudo!</b>
         </p>
+
+        <p class="texto-verde">Novo texto: <em>Novo texto tambem!</em></p>
+
+        <div id="quadrado">
+            <!--O ID precisa ser único na página-->
+        </div>
+
+        <div id="quadrado" class="texto-verde"></div>
+
     </body>
 </html>
