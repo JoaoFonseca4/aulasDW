@@ -1,0 +1,19 @@
+:root{
+        /* Tema Claro*/
+        --bg-color: #E9C153;
+        --text-color: #000;
+        --nav-bar: #537BE9;
+        --card-bg: hsl(0, 23%, 94%);
+        --footer-bg: #537BE9;
+        
+
+    
+          /* Tema Escuro */
+    body.dark-mode{
+        --bg-color: #000;
+        --text-color: #fff;
+        --nav-bar: #1f1f1f;
+        --card-bg: #1e1e1e;
+        --footer-bg: #1f1f1f;
+        }
+  }
