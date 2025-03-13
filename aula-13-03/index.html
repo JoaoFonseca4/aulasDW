@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>DarkMode</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+                <div class="logo">Logo Legal</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div onclick="toggleDarkMode()" class="dark-mode-toggle">DarkMode</div>
+        </nav>
+        <!-- Seção de Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Card</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, omnis error quaerat quam architecto dolore blanditiis repellendus aperiam at repudiandae reprehenderit illo ex quas veritatis pariatur consequatur voluptatem. Sequi, enim!
+                </p>
+            </div><!-- FIM Card 1-->
+
+            <div class="card">
+                <h3>Card</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, omnis error quaerat quam architecto dolore blanditiis repellendus aperiam at repudiandae reprehenderit illo ex quas veritatis pariatur consequatur voluptatem. Sequi, enim!
+                </p>
+            </div><!-- FIM Card 2-->
+
+            <div class="card">
+                <h3>Card</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, omnis error quaerat quam architecto dolore blanditiis repellendus aperiam at repudiandae reprehenderit illo ex quas veritatis pariatur consequatur voluptatem. Sequi, enim!
+                </p>
+            </div><!-- FIM Card 3-->
+
+        </section>
+
+        <footer>
+            <p>João Francisco Fabbri Fonseca - 2025</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script>
+            function toggleDarkMode(){
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+    </body>
+</html>
