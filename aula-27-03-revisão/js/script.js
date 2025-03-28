@@ -48,7 +48,7 @@ var numero2= " ";
 var operacao= " ";
 
 n0.addEventListener('click', function(){
-    if (operacao == null){
+    if (operacao == " "){
         numero1 = numero1 + n0.textContent;
         calculo.innerText = numero1;
     }else{
@@ -58,7 +58,7 @@ n0.addEventListener('click', function(){
 });
 
 n1.addEventListener('click', function(){
-    if (operacao == null){
+    if (operacao == " "){
         numero1 = numero1 + n1.textContent;
         calculo.innerText = numero1;
     }else{
@@ -67,22 +67,141 @@ n1.addEventListener('click', function(){
     }
 });
 
+n2.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n2.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n2.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n3.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n3.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n3.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n4.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n4.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n4.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+
+n5.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n5.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n5.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n6.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n6.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n6.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n7.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n7.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n7.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n8.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n8.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n8.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+n9.addEventListener('click', function(){
+    if (operacao == " "){
+        numero1 = numero1 + n9.textContent;
+        calculo.innerText = numero1;
+    }else{
+        numero2 = numero2 +n9.textContent;
+        calculo.innerText = numero1 + " " + operacao + " " + numero2;
+    }
+});
+
+
+
 //--------
 
 divisao.addEventListener('click', function (){
     operacao = divisao.textContent;
-    calculo.innerText = numero1 + " " +operacao +" " + numero2;
+    calculo.innerText = numero1 + " " + operacao +" " + numero2;
 });
+
+multiplicacao.addEventListener('click', function (){
+    operacao = multiplicacao.textContent;
+    calculo.innerText = numero1 + " " + operacao +" " + numero2;
+});
+
+soma.addEventListener('click', function (){
+    operacao = soma.textContent;
+    calculo.innerText = numero1 + " " + operacao +" " + numero2;
+});
+
+subtracao.addEventListener('click', function (){
+    operacao = subtracao.textContent;
+    calculo.innerText = numero1 + " " + operacao +" " + numero2;
+});
+
+
 
 //------------
  
 igual.addEventListener('click', function(){
-    if (operacao = "/") {
+    if (operacao == "/") {
         resultado.innerText = parseFloat(numero1) / parseFloat(numero2);
-    } else if (operacao == "*");
+
+    } else if (operacao == "*"){
+        resultado.innerText = parseFloat(numero1) * parseFloat(numero2);
+
+    } else if (operacao == "+"){
+        resultado.innerText = parseFloat(numero1) + parseFloat(numero2);
+
+    } else if (operacao == "-"){
+        resultado.innerText = parseFloat(numero1) - parseFloat(numero2);
+    }
+    
     // Agora vai os outros else if...
      else{
         resultado.innerText = "** ERRO **";
     }
 });
+
+//----------------
+limpar.addEventListener('click', function(){
+    numero1 = " ";
+    numero2 = " ";
+    operacao = " ";
+    resultado.innerText = " ";
+    calculo.innerText = " ";
+})
 
