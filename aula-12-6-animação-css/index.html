@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;           
+        }
+
+        .louquinho{        
+            background: #ff12ff;
+            border-radius: 15px;
+            animation-name: loucura;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+            animation-direction: alternate;
+        }
+
+        .easeout{
+            animation: correr 2s ease-out;
+            background: green;
+            border-radius: 15px;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+        
+        .easeinout{
+            animation: correr 2s ease-in-out;
+            background: blue;
+            border-radius: 15px;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+            animation-direction: alternate;
+        }
+
+       @keyframes correr{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(500px);
+            }
+       } 
+
+       @keyframes loucura{
+            0%{
+                transform: translateX(0) scale(2);
+            }
+
+            25%{
+                transform: translateX(calc(100vw - 200px)) rotate(90deg);
+            }
+
+            50%{
+                transform: translate(0, calc(100vh - 200px))  rotate(180deg);
+            }
+
+            100%{
+                transform: translate(calc(100vw - 200px), calc(100vh - 200px)), scale(0.5);
+               
+            }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="box louquinho"></div>
+    <div class="box easeinout"></div>
+    <div class="box easeout"></div>
+    
+</body>
+</html>
